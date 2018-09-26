@@ -1,31 +1,38 @@
 # DASB - Data Science Basic
 Data Science Basic Module of HSLU
 
-## R
-### Install package
-install.packages("package-name")
+## R - Basics
+* Install package
+    ```R
+    install.packages("tidyverse")
+    install.packages(c("nycflights13", "gapminder", "Lahman"))
+    ```
 
-example:
-```cmd
-install.packages("tidyverse")
-install.packages(c("nycflights13", "gapminder", "Lahman"))
-```
+* Include package
+    ```R
+    library(tidyverse)
+    ```
 
-### Include package
-library("package-name")
+* Recreate Dataset
+    ```R
+    dput(mtcars) #copy output
+    mtcars <-    #insert copied output
+    ```
 
-example:
-```cmd
-library(tidyverse)
-```
+## Data Exploration
 
-### Recreate Dataset
-dput("dataset")
+### Data
+* Output data
+    ```R
+    mpg #dataset name
+    ```
 
-example:
-```cmd
-dput(mtcars) #copy output
-mtcars <-    #insert copied output
-```
-
-### Data Exploration
+### Visualization
+* Creating a ggplot
+    ```R
+    ggplot(data = mpg) + geom_point(mapping = aes(x = displ, y = hwy))
+    ```
+* Tempate for ggplot
+    ```R
+    ggplot(data = <DATA>) + <GEOM_FUNCTION>(mapping = aes(<MAPPINGS>))
+    ```
