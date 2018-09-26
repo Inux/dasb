@@ -1,6 +1,15 @@
 # DASB - Data Science Basic
 Data Science Basic Module of HSLU
 
+Table of Contents
+=================
+
+   * [DASB - Data Science Basic](#dasb---data-science-basic)
+      * [R - Basics](#r---basics)
+      * [Data Exploration](#data-exploration)
+         * [Data](#data)
+         * [Visualization](#visualization)
+
 ## R - Basics
 * Install package
     ```R
@@ -20,7 +29,6 @@ Data Science Basic Module of HSLU
     ```
 
 ## Data Exploration
-
 ### Data
 * Output data
     ```R
@@ -36,3 +44,13 @@ Data Science Basic Module of HSLU
     ```R
     ggplot(data = <DATA>) + <GEOM_FUNCTION>(mapping = aes(<MAPPINGS>))
     ```
+* Coloring
+    ```R
+    ggplot(data = mpg) + geom_point(mapping = aes(x = displ, y = hwy, color = class))
+    ```
+    instead of color the following 'asthetic' can be used:
+    * size
+    * alpha
+    * shape
+    
+    all of them can take a concrete value (e.g color = "blue")
